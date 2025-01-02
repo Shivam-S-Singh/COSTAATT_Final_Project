@@ -112,6 +112,8 @@ What is DevOps ?
 
 4.7 Physical devices the network is based on.
 
+	4.7.1 Arista 7050T-52
+
 
 	
 	
