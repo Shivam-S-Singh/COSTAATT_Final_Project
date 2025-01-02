@@ -1,3 +1,3 @@
 # COSTAATT Final Project Overview
 
-## The application of DevOps in Campus Area Networks
+## The Application of DevOps in Campus Area Networks
