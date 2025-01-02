@@ -10,4 +10,6 @@ Common Issues faced in Network Engineering:
 - Configuration Management
 - Testing changes before executing them in Production
 
+### Building Our Network
+Below is a high level diagram of what our network will look like.
 
