@@ -6,9 +6,8 @@ This is a practical exercise to address common challenges faced in computer netw
 
 Common Issues faced in Network Engineering:
 - Documentation
-    - Version Control System
 - Production network as single source of truth
 - Configuration Management
-- Automated Testing
+- Testing changes before executing them in Production
 
 
