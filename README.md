@@ -12,4 +12,5 @@ Common Issues faced in Network Engineering:
 
 ### Building Our Network
 Below is a high level diagram of what our network will look like.
+![High Level Design]()
 
