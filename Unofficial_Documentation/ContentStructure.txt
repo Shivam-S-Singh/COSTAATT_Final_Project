@@ -113,19 +113,17 @@ What is DevOps ?
 4.7 Physical devices the network is based on.
 
 	4.7.1 Arista 7050T-52
+	4.7.2 Cisco Catalyst 2960C
+	4.7.3 Cisco ASR 1001-X
+	4.7.4 Fortinet FortiGate 100E
+	4.7.5 Juniper EX2300
 
-
-	
 	
 
 Keep the technical aspects in a seperate document and just present items at a high level.
 
 
-
-
 Misc Notes:
-
-
 
 The second question is about the collaborative process between our team members. If we work
 with other network engineers, we will most likely need to work collectively on the files. These
