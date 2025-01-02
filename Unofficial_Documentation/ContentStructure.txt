@@ -1,0 +1,156 @@
+Project Proposal Content Structure:
+
+1 Executive Summary:
+
+1.1 Italized summary and then follow up with content
+
+1.2 What this project does not cover and why ?
+
+*************************************************************************************
+
+2 Introduction:
+
+2.1 Client Background:
+
+2.2 Problem: Summarize problems, documentation, changes, long turnaround times
+
+2.3 Cause of the problem and reason to resolve the issue:
+
+2.4 Aim:
+
+2.5 Evaluation:
+
+*************************************************************************************
+
+3 Objectives: High level overview of the tasks associated with project
+
+What is DevOps ?
+
+3.1 Documentation and Production Network as the single source of truth:
+
+	3.1.1 Version Control System
+
+	3.1.2 Netbox for single source of truth
+
+3.2 Configuration Management
+
+3.3 Automated Testing and Testing Framework
+
+	3.3.1 Virtualized networks for testing
+	
+	3.3.2 Utilize testing frameworks to validate network functionality
+
+3.4 Continuous integration and continuous deployment (CI/CD)
+
+
+**************************************************************************************
+
+4 Activities:
+
+4.1 Design the network. Elaborate on design choices and process. PPDIOO / NSA Design Guide / Cisco Guide to LAN networks
+    Greenfield deployment
+
+	4.1.1 Construct the HL physical design of the network (Draw.IO)
+		-Devices
+		-Topology
+	
+	4.1.2 Racked Equipment
+		-Core Devices
+		-Distribution
+		-Access
+
+	4.1.3 Construct the logical design of the network. (NetBox) (Generate Tables from NetBox for documentation)
+		-VLANs
+		-IP Address assignments
+		-IP Routes
+		-HSRP
+		-ACLs
+
+	4.1.4 Flow diagram indicating the workflow for configuration changes
+	
+		NetBox -> Update YML Files -> Push code using Ansible
+		
+		Still have to factor in Github / Automated Testing / CI/CD Software into the process
+
+
+4.2 Installing and gathering the necessary software packages.
+	3.2.1 Base OS 
+	3.2.2 GNS3 Installation
+	3.2.3 NetBox
+	3.2.4 Ansible
+	
+
+4.3 Aquiring the network device images
+	3.3.1 Cisco - Cisco IOS Release 15.0(2)SE | Cisco IOS XE
+	3.3.2 Juniper - vJunos-switch
+	3.3.3 Fortinet - FortiGate versions higher than 7.2.0 trial license is VERY restrictive
+	3.3.4 Arista - vEOS 4.33
+
+
+
+**************************************************************************************
+
+4 Resources:
+
+4.1 System Hardware - Use neofetch and then elaborate
+
+4.2 Base Operating System - Ubuntu / Act as jumpserver in terms of managing the network in real world setting
+
+4.3 Supporting software
+
+	4.3.1 Draw.IO
+	
+	4.3.2 Netbox
+
+	4.3.3 Docker - For network services
+
+4.4 Network Simulation Tool - GNS3
+
+4.5 Configuration Management - Ansible
+
+4.6 CI/CD Tool - Jenkins or Gitlab
+
+4.7 Physical devices the network is based on.
+
+
+	
+	
+
+Keep the technical aspects in a seperate document and just present items at a high level.
+
+
+
+
+Misc Notes:
+
+
+
+The second question is about the collaborative process between our team members. If we work
+with other network engineers, we will most likely need to work collectively on the files. These
+can be Python scripts, Ansible Playbooks, Jinja2 templates, INI-style configuration files, and many
+others. The point is that any kind of text-based file should be tracked with multiple inputs that
+everybody on the team should be able to see.
+
+Git and GitHub are not the same things. Sometimes, for engineers who are new to version-control
+systems, this is confusing. Git is a revision-control system, while GitHub, https://github.com/,
+is a centralized hosting service for Git repositories.
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
