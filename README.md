@@ -21,8 +21,10 @@ The reason I chose to build a network from scratch is that it will allow me to b
 With that being said, we need to first design a new network. If you would like the nitty gritty details behind my design choices as well as the process you can reference the Project Proposal Document.
 
 
-Tradionally in the earlier design process of networks, the most commonly used tools were Visio, Excel and Word. Where Visio would be used for diagrams of the proposed network. Word and Excel would be used to log logical information such as VLANs and IP Addressing. This was what was available at the time and there are licensing cost associated with these products.
-The tools that were utilized in the design stage of the network were Draw.IO and NetBox. In the spirit of open source development we will be utilizing as much freely available software from the initial start of the project.
+Tradionally in the earlier design process of networks, the most commonly used tools were Visio, Excel and Word. Where Visio would be used for diagrams of the proposed network. Word and Excel would be used to log logical information such as VLANs and IP Addressing. This was what was available at the time and there are licensing cost associated with these software.
+
+
+The tools that were utilized in the design stage of the network were Draw.IO and NetBox. In the spirit of open source development we will be utilizing as much freely available software from the initial start of the project all the way to final product.
 
 Below is a high level diagram of what our network will look like. This is a 3-Tier network
 
