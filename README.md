@@ -13,6 +13,6 @@ Common Issues faced in Network Engineering:
 ### Building Our Network
 Below is a high level diagram of what our network will look like.
 
-![Network Image](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/525df048dba2610abe50ec0f33f6ce6c1585687b/NetworkCostaatt_HLDv1_2.jpg)
+![COSTAATT High Level Diagram](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/f9ebebf90d190d41b07ddb6494e0a1dbd5036574/NetworkCostaatt_HLD.jpg)
 
 
