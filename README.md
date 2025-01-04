@@ -8,14 +8,20 @@ Common Issues faced in Network Engineering:
 - Inaccurate Documentation
 - Production network as the single source of truth
 - Configuration Management
-- Testing configuration changes before executing them in Production
+- Testing on production network
 - Change management roadblocks
 
-### Building Our Network
-We will be doing a greenfield deployment instead of trying to simulate COSTAATT's existing network. The reason I chose to do this is that it will allow me to better showcase the power of some of tools we will be utilizing to complete this project.
-With that being said, we need to first design a new network. If you would like the nitty gritty details behind my design choices you can reference the Project Proposal Document.
 
-The tools that were utilized in the design of the network were Draw.IO and NetBox.
+<!-- List resources in earlier part of project -->
+<!-- Talk about how we will approach this issue and that this project is a proof of concept for company buy in -->
+
+### Building Our Network
+We will be doing a greenfield deployment instead of trying to simulate COSTAATT's existing network. 
+The reason I chose to build a network from scratch is that it will allow me to better showcase the power of some of tools we will be utilizing to complete this project.
+With that being said, we need to first design a new network. If you would like the nitty gritty details behind my design choices as well as the process you can reference the Project Proposal Document.
+
+The tools that were utilized in the design stage of the network were Draw.IO and NetBox.
+Tradionally in the earlier design process networks the most commonly used tools were Visio, Excel and Word documents. Where Visio would be used for diagrams of the proposed network. Word and Excel would be used to log logical information such as VLANs and IP Addressing. In the spirit of open source development we will be utilizing as much freely available software from the initial start of the project.
 
 
 Below is a high level diagram of what our network will look like. This is a 3-Tier network
