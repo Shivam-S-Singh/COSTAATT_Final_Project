@@ -32,4 +32,4 @@ While we are not working with physical devices, below serves as a reference to w
 <!-- List resources in start of project -->
 ![COSTAATT Core Switch Rack](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/abf5796238cafb637c89ff2fbfaf4b6eca8b7ddc/COSTAATT_South_Campus_Core_SwitchRack.jpg)
 
-
+![COSTAATT Access Switch Rack](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/a2fba9ad2b3cdaf24e2b8b82360586891f4910ef/COSTAATT_South_Campus_Access_SwitchRack.jpg)
