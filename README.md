@@ -24,6 +24,6 @@ Below is a high level diagram of what our network will look like. This is a 3-Ti
 
 While we are not working with physical devices, below serves as a reference to what the devices would look like on a switch rack. The devices chosen were based on its relation to the network OS software that will run in GNS3.
 <!-- List resources in start of project -->
-![COSTAATT Access](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/e4e564d1783db336dee53338d1dc5b98ff3b0d9b/COSTAATT_Access_Switches.jpg)
+![COSTAATT Core Switch Rack](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/abf5796238cafb637c89ff2fbfaf4b6eca8b7ddc/COSTAATT_South_Campus_Core_SwitchRack.jpg)
 
 
