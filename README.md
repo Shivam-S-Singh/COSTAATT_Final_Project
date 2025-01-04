@@ -4,6 +4,9 @@
 
 This is a practical exercise to address common challenges faced in computer networking that can be solved by utilizing software engineering concepts and tools originally intended to streamline the production and management of code.
 
+<!-- Talk about how we will approach this issue and that this project is a proof of concept for company buy in-->
+<!-- Describe the common issues faced and elaborate on our approach to each issue-->
+
 Common Issues faced in Network Engineering:
 - Inaccurate Documentation
 - Production network as the single source of truth
@@ -12,8 +15,10 @@ Common Issues faced in Network Engineering:
 - Change management roadblocks
 
 
-<!-- List resources in earlier part of project -->
-<!-- Talk about how we will approach this issue and that this project is a proof of concept for company buy in -->
+
+
+<!-- List resources in earlier part of project, software, tools, network devices, system requirements, network images -->
+
 
 ### Building Our Network
 We will be doing a greenfield deployment instead of trying to simulate COSTAATT's existing network. 
