@@ -45,7 +45,6 @@ While we are not working with physical devices, below serves as a reference to w
 ![COSTAATT Access Switch Rack](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/a2fba9ad2b3cdaf24e2b8b82360586891f4910ef/COSTAATT_South_Campus_Access_SwitchRack.jpg)
 
 
-Layer 3 router![COSTAATT High Level Diagram](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/3cbdf5f890c6d879cc6c7f2f5c599026b66d808a/Cisco_ASR_1001-X_Routers.svg)
 
 
 
