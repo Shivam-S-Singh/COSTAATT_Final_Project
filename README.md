@@ -36,7 +36,16 @@ Below is a high level diagram of what our network will look like. This is a 3-Ti
 ![COSTAATT High Level Diagram](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/f9ebebf90d190d41b07ddb6494e0a1dbd5036574/NetworkCostaatt_HLD.jpg)
 
 While we are not working with physical devices, below serves as a reference to what the devices would look like on a switch rack. The devices chosen were based on its relation to the network OS software that will run in GNS3.
+
+
+
 <!-- List resources in start of project -->
 ![COSTAATT Core Switch Rack](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/abf5796238cafb637c89ff2fbfaf4b6eca8b7ddc/COSTAATT_South_Campus_Core_SwitchRack.jpg)
 
 ![COSTAATT Access Switch Rack](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/a2fba9ad2b3cdaf24e2b8b82360586891f4910ef/COSTAATT_South_Campus_Access_SwitchRack.jpg)
+
+
+Layer 3 router![COSTAATT High Level Diagram](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/3cbdf5f890c6d879cc6c7f2f5c599026b66d808a/Cisco_ASR_1001-X_Routers.svg)
+
+
+
