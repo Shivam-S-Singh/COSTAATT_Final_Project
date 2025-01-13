@@ -11,7 +11,9 @@
 \begin{document}
 
 
-\title{The Application of DevOps in Campus Area Networks}
+\title{Harnessing Software Engineering Principles in Network Communication \\
+\vspace{0.5cm}
+\large The Application of DevOps in Campus Area Networks}
 \author{Shivam Singh}
 \date{\today}
 \maketitle
@@ -77,19 +79,31 @@ Critical services such as file sharing, active directory and email which was ori
 
 \medskip
 
-The traditional methods of managing the network has led to longer turnaround times with regards to troubleshooting issues, and scalability when making changes in the network to accommodate new devices or applications. This causes a halt in productivity as well as growth in the organization when they attempt to integrate new services.
+The traditional methods of managing the network has led to longer turnaround times with regards to troubleshooting issues, and scalability when making configuration changes to accommodate new devices or applications. Below are the following areas of interest.
 
 	\subsubsection{Documentation}
+We rely on documentation such as the classic Visio diagrams for topology requirements, Spreadsheets/Word Docs for IP Addressing Scheme and VLAN provisioning as well as emails communicating network changes. Manual modification to documentation is \\
+necessary to track changes and this is not done frequently. Additional time and effort are required by staff in order to maintain documentation consistency. We find ourselves with multiple versions spread across various resources such as file shares or share drives and this can create confusion when trying to determine the known state of the network.
+
 	\subsubsection{Production Network as the Single Source of Truth}
+The Production network as the single source of truth means that whatever is in production and currently running is the state of the network. Often times when we deploy a network and we have to make changes we make these changes directly in production. This can be risky as changes that are thought to be non-detrimental can have a major negative impact on the network and its users. 
+	
 	\subsubsection{Configuration Management}
+We are presently using CLI-based configuration changes to manually make changes on network devices. This is prone to human error since we can make mistakes with regards to syntax and maintaining consistency when configurations have to be made across a fleet of devices. Configuration changes can become a repeatable task where we have redundant switches or routers in place. This can become a very time consuming activity especially with limited staff. (Speak on vendor specific syntax and its complexity when managing a multi vendor environment)
+	
 	\subsubsection{Testing on Production}
+Testing is important in DevOps but this has been a huge limitation for network engineers since traditionally for testing we would have to utilize real equipment. Having a non production lab environment can be costly and most organizations cannot afford this. 
+	
 	\subsubsection{Change Management Challenges}
+
 
 \newpage
 
 	\subsection{Aim}
 Implement a DevOps solution that enhances the management of COSTAATT's network which will improve system uptime and increased productivity for the organization. The solution contributes to productivity because automating repeatable or time consuming tasks will allow IT operations to concentrate on projects geared towards optimizing \\
 performance.
+
+\medskip
 
 
 
@@ -113,8 +127,9 @@ The Ansible framework must be able to communicate with all devices that support 
 Hypothetical scenarios will be introduced into the environment such as device or link failures and we will utilize the tools that we implemented to quickly recover. Failure to recover within an acceptable time frame will determine if the solution is fault tolerant. We want to recover within minutes. Examples of mass configuration changes will be carried out to test the efficiency of using Ansible. 
 
 
+\newpage
 
-
+\section{Objectives}
 
 
 
