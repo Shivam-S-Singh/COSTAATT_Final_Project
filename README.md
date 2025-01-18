@@ -23,7 +23,7 @@ Common Issues faced in Network Engineering:
 ### Building Our Network
 We will be doing a greenfield deployment instead of trying to simulate COSTAATT's existing network. 
 The reason I chose to build a network from scratch is that it will allow me to better showcase the power of some of tools we will be utilizing to complete this project.
-With that being said, we need to first design a new network. If you would like the nitty gritty details behind my design choices as well as the process you can reference the Project Proposal Document.
+With that being said, we need to first design a new network. If you would like details behind my design choices as well as the process you can reference the Project Proposal Document.
 
 
 Tradionally in the earlier design process of networks, the most commonly used tools were Visio, Excel and Word. Where Visio would be used for diagrams of the proposed network. Word and Excel would be used to log logical information such as VLANs and IP Addressing. This was what was available at the time and there are licensing cost associated with these software.
