@@ -21,8 +21,8 @@ Common Issues faced in Network Engineering:
 
 
 ### Building Our Network
-We will be doing a greenfield deployment instead of trying to simulate COSTAATT's existing network. 
-The reason I chose to build a network from scratch is that it will allow me to better showcase the power of some of tools we will be utilizing to complete this project.
+We will be doing a greenfield deployment instead of trying to simulate COSTAATT's existing network.
+The reason I chose to build a network from scratch is because having a design phase will allow me to better showcase some of the tools that will be utilized in this project.
 With that being said, we need to first design a new network. If you would like details behind my design choices as well as the process you can reference the Project Proposal Document.
 
 
@@ -43,8 +43,3 @@ While we are not working with physical devices, below serves as a reference to w
 ![COSTAATT Core Switch Rack](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/abf5796238cafb637c89ff2fbfaf4b6eca8b7ddc/COSTAATT_South_Campus_Core_SwitchRack.jpg)
 
 ![COSTAATT Access Switch Rack](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/a2fba9ad2b3cdaf24e2b8b82360586891f4910ef/COSTAATT_South_Campus_Access_SwitchRack.jpg)
-
-
-
-
-
