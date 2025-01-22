@@ -91,12 +91,11 @@ The traditional methods of managing the network has led to longer turnaround tim
 The following topics below are areas that present challenges within \textbf{\textit{Network Operations}} that can be solved by adopting a \textbf{\textit{Developer}} approach to the problem.
 
 	\subsubsection{Documentation}
-During the planning phase in network design we typically use Visio, spreadsheets and word documents to build our infrastructure. Where Visio is used to visualize our topology and spreadsheets or word documents would be used for IP address or VLAN assignment information. Text files holding configuration information would be stored in a centralized location and would sometimes be altered and then ran on the device where changes are required. There are challenges with regards to the modification, accountability and \\ collaboration of these documents.
+During the planning phase in network design we typically use Visio, spreadsheets and word documents to map our infrastructure. Where Visio is used to visualize our topology and spreadsheets or word documents would be used for IP address or VLAN assignment information. Text files holding configuration information would be stored in a centralized location and would sometimes be altered and then ran on the device where changes are required. This has traditionally been the standard for documenting our network but it comes with its drawbacks, specifically with regards to maintaining the documentation after they are modified.
 
 \medskip
 
-Manual updates are required whenever a change is made on the network, e.g., a network device is added or a new route or vlan has been provisioned on a device. This would mean an engineer would have to amend the topology in the Visio diagram and make changes in the related spreadsheets or word documents. This can become a time consuming task that is usually never a priority for the engineer as they may have more pressing matters.The task of updating the documentation sometimes gets pushed back to the point where it never gets completed. When an incident occurs or configuration changes are requested you are stuck with unreliable documentation which can delay resolving the issue or \\ 
-carrying out changes.
+Manual updates are required whenever a change is made on the network, e.g., a network device is added or a new route or VLAN has been provisioned on a device. This would mean an engineer would have to amend the topology in the Visio diagram and make changes in the related spreadsheets or word documents. This can become a time consuming task that is usually not a priority for the engineer.The task of updating the documentation sometimes gets pushed back to the point where it never gets completed. When an incident occurs or configuration changes are requested you are stuck with unreliable documentation which can delay resolving the issue or carrying out changes.
 
 \medskip
 
@@ -104,6 +103,11 @@ There is a lack of accountability when changes are made. For instance, lets say 
 When a change is made, we should have the necessary details when we look back on this change. Who made the change, when was it executed and why was it executed. This context and details is instrumental in effectively managing our network.
 
 \medskip
+
+Collaboration on documentation can also have its limitations 
+
+
+
 
 	\subsubsection{Production Network as the Single Source of Truth}
 The Production network as the single source of truth means that whatever is in production and currently running is the state of the network. Often times when we deploy a network and we have to make changes we make these changes directly in production. This can be risky as changes that are thought to be non-detrimental can have a major negative impact on the network and its users. 
