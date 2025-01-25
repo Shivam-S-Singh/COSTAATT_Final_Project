@@ -53,7 +53,7 @@ Complementary content available at \\
 \end{center}
 
 
-Many of the software used is open source or freely available.
+Many of the software used is open source or freely available. NetDevOps
 
 	\subsection{What this proposal does not cover ?}
 This solution does not include the implementation of the following elements which are common components in Campus Area Networks.
@@ -74,7 +74,7 @@ The reason these topics are not covered is because this proposal is not an all i
 	\subsection{Client Background \& Relevance}
 COSTAATT is a public tertiary institution in Trinidad and Tobago that offers programs in the areas of Information Technology, Business and Nursing, just to name a few.
 	
-\medskip
+\smallskip
 
 The solution being proposed can be applied to all types of organizations with sizeable
 networks as it is aimed towards addressing the management of a large-scale topology with limited human resources. The reason COSTAATT is an ideal candidate for this solution is because of their vast amount of networks and communication equipment that span multiple campuses across Trinidad and Tobago. 
@@ -82,31 +82,38 @@ networks as it is aimed towards addressing the management of a large-scale topol
 	\subsection{Problem}
 Critical services such as file sharing, active directory and email which was originally on premise is now being hosted on cloud based platforms or being migrated to decentralized infrastructure such as remote data centres. High availability, fault tolerant networks have become a requirement in order to ensure consistent access to these resources.
 
-\medskip
+\smallskip
 
 The traditional methods of managing the network has led to longer turnaround times with regards to troubleshooting issues, and scalability when making configuration changes to accommodate new devices or applications.
 
-\medskip
+\smallskip
 
 The following topics below are areas that present challenges within \textbf{\textit{Network Operations}} that can be solved by adopting a \textbf{\textit{Developer}} approach to the problem.
 
 	\subsubsection{Documentation}
-During the planning phase in network design we typically use Visio, spreadsheets and word documents to map our infrastructure. Where Visio is used to visualize our topology and spreadsheets or word documents would be used for IP address or VLAN assignment information. Text files holding configuration information would be stored in a centralized location and would sometimes be altered and then ran on the device where changes are required. This has traditionally been the standard for documenting our network but it comes with its drawbacks, specifically with regards to maintaining the documentation after they are modified.
+During the planning phase in network design we typically use Visio, spreadsheets and word documents to map our infrastructure. Where Visio is used to visualize our topology and spreadsheets or word documents would be used for IP address or VLAN assignment information. Text files holding configuration information would be stored in a centralized location and would sometimes be altered and then ran on the device where changes are required. This has traditionally been the standard for documenting our network but it comes with its drawbacks, specifically with regards to maintaining the documentation after the network is modified.
 
-\medskip
+\vspace{0.1mm}
 
-Manual updates are required whenever a change is made on the network, e.g., a network device is added or a new route or VLAN has been provisioned on a device. This would mean an engineer would have to amend the topology in the Visio diagram and make changes in the related spreadsheets or word documents. This can become a time consuming task that is usually not a priority for the engineer.The task of updating the documentation sometimes gets pushed back to the point where it never gets completed. When an incident occurs or configuration changes are requested you are stuck with unreliable documentation which can delay resolving the issue or carrying out changes.
+Several issues faced with regards to maintaining this documentation are
 
-\medskip
+\begin{itemize}
+\item Manual updates are required by network operators
+\item Lack of accountability when changes are executed
+\item Limited collaboration between colleagues
+\end{itemize}
+
+
+Manual updates are required whenever a change is made on the network, e.g., a \\ network device is added or a new route or VLAN has been provisioned on a device. This would mean an engineer would have to amend the topology in the Visio diagram and make changes in the related spreadsheets or word documents. This can be a time consuming task that is usually not a priority for the engineer.The task of updating the documentation sometimes gets pushed back to the point where it never gets completed. A consequence of this is when an incident occurs or configuration changes are requested you are stuck with unreliable documentation which can delay resolving the issue or carrying out changes.
+
+\smallskip
 
 There is a lack of accountability when changes are made. For instance, lets say an ACL entry was configured to block Facebook for a specific part of the network, why was this change made and who was the engineer that made the change. This change could have been implemented as a request from a manager who finds that their staff is spending too much time on social media or from the IT team in response to slow speeds due to over utilization of an internet circuit.
 When a change is made, we should have the necessary details when we look back on this change. Who made the change, when was it executed and why was it executed. This context and details is instrumental in effectively managing our network.
 
-\medskip
+\smallskip
 
-Collaboration on documentation can also have its limitations 
-
-
+Collaboration on documentation can also have its limitations when different teams are associated in the network management process. Someone in the Systems Administration team may have documentation that was shared to them via an email from the Network Engineering team. Changes may have been implemented since that last email \\ correspondence and the Sysadmins would not be aware that they are operating with outdated information.  
 
 
 	\subsubsection{Production Network as the Single Source of Truth}
