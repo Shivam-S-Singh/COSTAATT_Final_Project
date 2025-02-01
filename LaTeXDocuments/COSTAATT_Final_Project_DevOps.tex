@@ -117,14 +117,27 @@ Collaboration on documentation can also have its limitations when different team
 
 
 	\subsubsection{Production Network as the Single Source of Truth}
-The Single Source of Truth is the act of centralizing all data about Information Systems in a single location. In reference to what was mentioned earlier with regards to collaboration on documentation, when documentation is spread across multiple sources it can be \\ difficult to determine what the desired state of the network should exist in. How can we be sure that the documentation that we are looking at is the intended behaviour of the network ?
+The Single Source of Truth (SSoT) is the action of centralizing all data about Information Systems in a single location. In reference to what was mentioned earlier with regards to collaboration on documentation, when documentation is spread across multiple sources it can be difficult to determine the desired state of the network. How can we be sure that the documentation that we are looking at is the actual intended behaviour of our network and not obsolete or inaccurate information ?
 
 \smallskip
 
-When the \textit{desired state} of the network does not match the existing \textit{known state} this leads to an issue known as configuration drift. Configuration drift can lead to unpredictable system behaviour and can extend the time when carrying out maintenance tasks on the network. We are now forced to utilize the production network as our source of truth as we no longer
+When the \textit{desired state} of the network does not match the existing \textit{known state} this leads to an issue known as configuration drift. Configuration drift can lead to unpredictable system behaviour and can extend the time when carrying out maintenance tasks on the network. We are now forced to utilize the production network as our source of truth as we can no longer rely on our documentation to dictate our actions moving forward. 
+
+\smallskip
+
+We appropriately refer to the single central location of network information as the
+ \\ \textbf{\textit{Network Source of Truth} (NSoT)}.
 	
 	\subsubsection{Configuration Management}
-We are presently using CLI-based configuration changes to manually make changes on network devices. This is prone to human error since we can make mistakes with regards to syntax and maintaining consistency when configurations have to be made across a fleet of devices. Configuration changes can become a repeatable task where we have redundant switches or routers in place. This can become a very time consuming activity especially with limited staff. Most network environments have devices from multiple vendors with their own proprietary software and unique syntax to operate the equipment. 
+CLI-based configurations are executed to manually make changes on network devices. This is acceptable for the basic initial configuration of a network device but it does not scale well since this is prone to human error. We can make mistakes with regards to syntax and maintaining consistency when configurations have to be made across a fleet of devices. 
+
+\smallskip
+
+Well designed network environments often utilize redundant switches or routers in order to have increased network availability. When implementing configuration changes in these environments certain tasks become repeatable, e.g., lets say we have to provision a new VLAN on our network, we would have to add the VLAN on all the related switches. You can argue that we can use VTP to simplify this process but this has its drawbacks which will be discussed in the design of our network. This task can quickly become time consuming since the engineer would have to manually make the change on each switch.
+
+\smallskip
+
+Networks typically have devices from multiple vendors with their own proprietary \\ software and unique syntax to operate the equipment.
 	
 	\subsubsection{Testing on Production}
 Testing is important in DevOps but this has been a huge limitation for network engineers since traditionally for testing we would have to utilize real equipment. Having a non production lab environment can be costly and most organizations cannot afford this. 
@@ -160,7 +173,7 @@ Hypothetical scenarios will be introduced into the environment such as device or
 
 \section{Objectives}
 
-	\subsection{Strategies to the Problems Presented}
+	\subsection{Solution}
 
 	\subsection{Building the Network}
 		
@@ -181,7 +194,7 @@ Hypothetical scenarios will be introduced into the environment such as device or
 	\subsection{Design}
 		\subsubsection{Topology , Physical Rack and Change Process Flow}
 Draw.IO is a diagramming tool 
-		\subsubsection{IPAM}
+		\subsubsection{Network Source of Truth}
 	
 	\subsection{Network Components}
 		\subsubsection{Simulation Software}
@@ -190,7 +203,7 @@ Draw.IO is a diagramming tool
 		\subsubsection{Docker}
 		
 	\subsection{Infrastructure as Code}
-		\subsubsection{Automation}
+		\subsubsection{Automation Platform}
 		\subsubsection{Version Control System}
 		\subsubsection{CI \& CD}
 		\subsubsection{Automated Testing}
