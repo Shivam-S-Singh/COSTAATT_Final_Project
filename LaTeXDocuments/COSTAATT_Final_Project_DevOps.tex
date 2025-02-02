@@ -137,43 +137,28 @@ Well designed network environments often utilize redundant switches or routers i
 
 \smallskip
 
-Networks typically have devices from multiple vendors with their own proprietary \\ software and unique syntax to operate the equipment.
+Networks are typically made up of devices from multiple vendors, each with their own proprietary operating systems and unique syntax. This can add an additional level of complexity as now the operator has to possess knowledge specific to each platform. This can contribute to the risk of misconfiguration and also delay the execution of changes on the network.   
 	
-	\subsubsection{Testing on Production}
-Testing is important in DevOps but this has been a huge limitation for network engineers since traditionally for testing we would have to utilize real equipment. Having a non production lab environment can be costly and most organizations cannot afford this. 
+	
+	\subsubsection{Testing on Production \& Testing Frameworks}
+Testing is important in DevOps but this has been a huge limitation for network engineers since traditionally for testing we would have to utilize real equipment. Having a \\ non-production environment can be costly and most organizations would not invest in additional hardware. Not having a test environment means that we would have to execute changes directly in our production network. Configuration changes can potentially have unpredictable results which could lead to performance issues or downtime, so having some form of a test environment may possibly mitigate these risks.
+
+\smallskip
+
+Loopback to writing the testing Framework once this is clear.
+
 	
 	\subsubsection{Change Management}
 
 
-	\subsection{Aim}
-Implement a DevOps solution that enhances the management of COSTAATT's network which will improve system uptime and increased productivity for the organization. The solution contributes to productivity because automating repeatable or time consuming tasks will allow IT operations to concentrate on projects geared towards optimizing \\ performance.
 
-
-	\subsection{Evaluation}
-The delivery of the following components will determine the success of this project.
-
-\smallskip
-
-Build a network topology that is up to standards with regards to security and guidelines of Campus Area Networks. I will be relying on the NSA’s Network Infrastructure Security Guide as well as Cisco’s guide on implementing Campus Area Networks. 
-
-\smallskip
-
-The devices must be communicating successfully with one another. We can use simple ping test in order to determine this. 
-
-\smallskip
-
-The Ansible framework must be able to communicate with all devices that support SSH and I should be able to push configuration changes to all devices successfully. Ansible has built in features that indicate if you have successfully pushed configurations to a device. 
-
-\smallskip
-
-Hypothetical scenarios will be introduced into the environment such as device or link failures and we will utilize the tools that we implemented to quickly recover. Failure to recover within an acceptable time frame will determine if the solution is fault tolerant. We want to recover within minutes. Examples of mass configuration changes will be carried out to test the efficiency of using Ansible. 
 
 
 \newpage
 
 \section{Objectives}
 
-	\subsection{Solution}
+	\subsection{Solutions}
 
 	\subsection{Building the Network}
 		
