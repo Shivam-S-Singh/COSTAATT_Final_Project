@@ -64,7 +64,7 @@ This solution does not include the implementation of the following elements whic
 \item Voice and Collaboration
 \end{itemize}
 
-The reason these topics are not covered is because this proposal is not an all inclusive solution and is intended to provide a sense of direction for the organization to transition to utilizing the methodologies associated with Developer Operations. As such, I limited the proof of concept to network connectivity and security. 
+The reason these topics are not covered is because this proposal is not an all inclusive solution and is intended to provide a sense of direction for the organization to transition to utilizing the methodologies associated with Developer Operations. As such, I limited the proof of concept to wired network connectivity and security. 
 
 	
 	
@@ -145,30 +145,54 @@ Testing is important in DevOps but this has been a huge limitation for network e
 
 \smallskip
 
-Loopback to writing the testing Framework once this is clear.
+Loopback to writing the testing framework once this is clear.
 
 	
 	\subsubsection{Change Management}
+Network changes can lead to potential loss of services so the process of implementing configuration changes can at times be long and drawn out. This is due to the fact that changes typically require multiple individuals to review as well as sign off on the change before any action is taken. These reviews can involve technical write-ups and meetings with senior staff and or stakeholders. When preparing change documents or presentations for meetings the engineer must tailor it for both technical and non-technical staff which takes additional effort to complete. Meetings can also be delayed based on the availability of the necessary stakeholders. The fact that senior members are also involved in the process means that their attention is now diverted to this process when it could be spent elsewhere on other critical issues or projects.
 
 
-
+	\subsection{Solutions}
 
 
 \newpage
 
 \section{Objectives}
 
-	\subsection{Solutions}
+	\subsection{Building our Network}
+This is not an in-depth guide to designing networks, however it is important that we construct a system that is up to current standards. As we mentioned earlier the main focus of this network will be wired connectivity as well as security and as such we will be utilizing the \textit{NSA’s Network Infrastructure Security Guide} as well as \textit{Cisco’s Campus LAN and Wireless LAN Solution Design Guide}.
 
-	\subsection{Building the Network}
-		
+	\subsubsection{PPDIOO Lifecycle}
+
+Some practices just stand the test of time. When it comes to deploying networks, \textit{Cisco's PPDIOO Model} has been instrumental to network engineers going back to the early 2000's. We will be adapting our deployment strategy by utilizing the PPDIOO model alongside DevOps principles.
+
+\smallskip
+
+\begin{enumerate}
+\item \textbf{Prepare} - Determine the business requirements.
+\item \textbf{Plan} - Identify the network requirements based on business goals.
+\item \textbf{Design} - Provide blueprints that conceptualizes the completed product.
+\item \textbf{Implement} - Network elements are deployed based on design specifications.
+\item \textbf{Operate} - Maintain and monitor the networks functionality.
+\item \textbf{Optimize} - Search for areas where operational efficiency can be improved.
+\end{enumerate}
+
+\smallskip
+
+While the PPDIOO model might seem like a slow and lengthy process, it is designed to produce the best possible product for your client and has remained tried and true over the last decade. 
+
+\smallskip
+
+DevOps which has garnered a culture of \textit{moving fast and breaking things} favours an \\ approach of rapid development by utilizing project management concepts such as \\ Agile and Lean. Agile was developed to streamline the \textit{Software Development Lifecycle} (SDLC).
+
+The following procedures are associated with the SDLC.
+
+
 	\subsection{Establishing the Configuration Work Flow}
 
 	\subsection{Configuring our Control Node}
 		
 		
-
-
 
 \newpage
 
