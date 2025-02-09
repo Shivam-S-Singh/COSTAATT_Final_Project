@@ -160,53 +160,102 @@ Network changes can lead to potential loss of services so the process of impleme
 \section{Objectives}
 
 	\subsection{Building our Network}
-This is not an in-depth guide to designing networks, however it is important that we construct a system that is up to current standards. As we mentioned earlier the main focus of this network will be wired connectivity as well as security and as such we will be utilizing the \textit{NSA’s Network Infrastructure Security Guide} as well as \textit{Cisco’s Campus LAN and Wireless LAN Solution Design Guide}.
+This is not an in-depth guide to designing networks, however it is important that we construct a system that is up to current standards. As we mentioned earlier the focus here will be wired connectivity as well as security. We will be utilizing the \textit{NSA’s Network Infrastructure Security Guide} as well as \textit{Cisco’s Campus LAN and Wireless LAN Solution Design Guide} to construct our network.
 
-	\subsubsection{PPDIOO Lifecycle}
+	\subsubsection{Deployment Strategy}
 
-Some practices just stand the test of time. When it comes to deploying networks, \textit{Cisco's PPDIOO Model} has been instrumental to network engineers going back to the early 2000's. We will be adapting our deployment strategy by utilizing the PPDIOO model alongside DevOps principles.
+Some practices just stand the test of time. When it comes to deploying networks, \textit{Cisco's PPDIOO Lifecycle} has been instrumental to network engineers going back to the early 2000's. We will be adapting our deployment strategy by utilizing the PPDIOO model alongside DevOps principles.
 
 \smallskip
 
 \begin{enumerate}
-\item \textbf{Prepare} - Determine the business requirements.
-\item \textbf{Plan} - Identify the network requirements based on business goals.
-\item \textbf{Design} - Provide blueprints that conceptualizes the completed product.
-\item \textbf{Implement} - Network elements are deployed based on design specifications.
-\item \textbf{Operate} - Maintain and monitor the networks functionality.
-\item \textbf{Optimize} - Search for areas where operational efficiency can be improved.
+\item \textbf{Prepare:} Determine the business requirements.
+\item \textbf{Plan:} Identify the network requirements based on business goals.
+\item \textbf{Design:} Provide blueprints that conceptualizes the completed product.
+\item \textbf{Implement:} Network elements are deployed based on design specifications.
+\item \textbf{Operate:} Maintain and monitor the networks functionality.
+\item \textbf{Optimize:} Search for areas where operational efficiency can be improved.
 \end{enumerate}
 
 \smallskip
 
-While the PPDIOO model might seem like a slow and lengthy process, it is designed to produce the best possible product for your client and has remained tried and true over the last decade. 
+The PPDIOO model is a lengthy process but it is designed to produce the best possible product for your client.
 
 \smallskip
 
-DevOps which has garnered a culture of \textit{moving fast and breaking things} favours an \\ approach of rapid development by utilizing project management concepts such as \\ Agile and Lean. Agile was developed to streamline the \textit{Software Development Lifecycle} (SDLC).
+DevOps which has garnered a culture of \textit{moving fast and breaking things} favours an \\ approach of rapid development by utilizing project management concepts such as \\ \textbf{Agile} and \textbf{Lean}. Agile and Lean was introduced to streamline the traditional methodology of producing software which follows the \textit{Software Development Lifecycle (SDLC)}.
 
 The following procedures are associated with the SDLC.
 
+\begin{enumerate}
+\item \textbf{Plan:} Determine the business requirements.
+\item \textbf{Design:} Prototype solutions based on business goals.
+\item \textbf{Implement:} Code the proposed solution.
+\item \textbf{Test:} Check for bugs/errors and that it meets user requirements.
+\item \textbf{Deploy:} The final product is packaged and released.
+\item \textbf{Maintain:} Execute changes related to bug fixes, user issues and performance.
+\end{enumerate}
+
+You may have noticed that the SDLC and PPDIOO Lifecycle share common stages with one another. Given this realization, we can safely assume that we can apply Agile and Lean concepts to our PPDIOO model in a similar manner.
+
+\smallskip
+
+\textbf{Agile}
+
+\smallskip
+
+\textbf{Lean}
+
+\subsubsection{Design Phase}
+
+We will adhere to these practices by breaking down the Preparation, Planning and Design phases into the following tasks. The idea here is we want to spend less time on the design phases and start the implementation phase as quickly as possible to deliver a minimum viable product.
+
+\begin{enumerate}
+\item \textbf{Gather Business Requirements}
+\item \textbf{Translate the Business Requirements to Network Requirements}
+\item \textbf{Select our Network Equipment}
+\item \textbf{Create a HLD of our topology}
+\item \textbf{Log }
+\end{enumerate}
+
+\subsubsection{Implementation Phase}
+
+The implementation phase is also dependent on the configuration of the Control Node and its related assets.
+
+
+	\subsection{Configuring our Control Node}
+	
+	\subsubsection{Installing our Base Operating System}
+	
+	\subsubsection{Installing necessary Software Packages}
+	
+	\subsubsection{Configuring System Environment for Network Operations}
 
 	\subsection{Establishing the Configuration Work Flow}
 
-	\subsection{Configuring our Control Node}
+	
 		
 		
 
 \newpage
 
 \section{Resources}
+
+Almost all the software that is needed is open-source. Not all the network operating systems are free.
 	
 	\subsection{Host System}
 	
 	\subsection{Design}
+	
 		\subsubsection{Topology , Physical Rack and Change Process Flow}
-Draw.IO is a diagramming tool 
+\textit{Draw.IO} is a modelling tool that is used for the creation of diagrams such as flow charts and network designs. It is a great alternative to Visio and no license cost is attached.
+
 		\subsubsection{Network Source of Truth}
+\textit{NetBox} is used to document networks with relevant information such as IPAM and DCIM. NetBox is intended to be used as a single source of truth within network operations.
 	
 	\subsection{Network Components}
 		\subsubsection{Simulation Software}
+GNS3 stands for Graphical Network Simulator-3. It is popular tool used for the educational purposes of 
 		\subsubsection{Network Operating Systems}
 		\subsubsection{IP Services}
 		\subsubsection{Docker}
