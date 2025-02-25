@@ -164,7 +164,7 @@ This is not an in-depth guide to designing networks, however it is important tha
 
 	\subsubsection{Deployment Strategy}
 
-Some practices just stand the test of time. When it comes to deploying networks, \textit{Cisco's PPDIOO Lifecycle} has been instrumental to network engineers going back to the early 2000's. We will be adapting our deployment strategy by utilizing the PPDIOO model alongside DevOps principles.
+When it comes to deploying networks, \textit{Cisco's PPDIOO Lifecycle} has been instrumental to network engineers going back to the early 2000's. We will be adapting our deployment strategy by utilizing the PPDIOO model alongside DevOps principles.
 
 \smallskip
 
@@ -183,7 +183,7 @@ The PPDIOO model is a lengthy process but it is designed to produce the best pos
 
 \smallskip
 
-DevOps which has garnered a culture of \textit{moving fast and breaking things} favours an \\ approach of rapid development by utilizing project management concepts such as \\ \textbf{Agile} and \textbf{Lean}. Agile and Lean was introduced to streamline the traditional methodology of producing software which follows the \textit{Software Development Lifecycle (SDLC)}.
+DevOps which has garnered a culture of \textit{moving fast and breaking things} favours an \\ approach of rapid development by utilizing project management concepts such as \\ \textbf{Agile}. Agile was introduced to streamline the traditional methodology of producing software which follows the \textit{Software Development Lifecycle (SDLC)}.
 
 The following procedures are associated with the SDLC.
 
@@ -196,34 +196,40 @@ The following procedures are associated with the SDLC.
 \item \textbf{Maintain:} Execute changes related to bug fixes, user issues and performance.
 \end{enumerate}
 
-You may have noticed that the SDLC and PPDIOO Lifecycle share common stages with one another. Given this realization, we can safely assume that we can apply Agile and Lean concepts to our PPDIOO model in a similar manner.
+You may have noticed that the SDLC and PPDIOO Lifecycle share common stages with one another. Given this realization, we can safely assume that we can apply Agile concepts to our PPDIOO model in a similar manner.
 
 \smallskip
 
-\textbf{Agile}
+\textbf{Agile} is a philosophy that focuses on delivering customer satisfaction through cross-team \\ collaboration and being able to quickly adapt to changes. Instead of waiting for the \\ completion of each phase in its entirety before advancing, we aim for small iterative \\ changes throughout the process until the desired results are achieved.
 
 \smallskip
 
-\textbf{Lean}
+Taking this philosophy into consideration, we can focus on the configurations of basic connectivity first, such as the VLANs, IP Interface Assignments and Routing. Then after we can shift out attention to configurations associated with redundancy and security, e.g., FHRP, STP and ACLs. The physical network will have to be completed before these configurations can be carried out.
 
 \subsubsection{Design Phase}
 
 We will adhere to these practices by breaking down the Preparation, Planning and Design phases into the following tasks. The idea here is we want to spend less time on the design phases and start the implementation phase as quickly as possible to deliver a minimum viable product.
 
 \begin{enumerate}
-\item \textbf{Gather Business Requirements}
-\item \textbf{Translate the Business Requirements to Network Requirements}
-\item \textbf{Select our Network Equipment}
-\item \textbf{Create a HLD of our topology}
-\item \textbf{Log }
+\item \textbf{Gather Business Requirements / Translate to Network Specifications}
+\item \textbf{Create a HLD of our Topology}
+\item \textbf{Select Devices for Implementation}
+\item \textbf{Utilize NetBox to Develop Logical Design}
 \end{enumerate}
 
 \subsubsection{Implementation Phase}
 
-The implementation phase is also dependent on the configuration of the Control Node and its related assets.
+The implementation phase is dependent on the configuration of the Control Node and its related assets. This will have to be completed before changes can be pushed to our devices. For this phase, we will be focused on the initial configs to allow management to our devices.
+
+\begin{enumerate}
+\item \textbf{Add Devices to GNS3 and \textit{"Cable"} Equipment}
+\item \textbf{Generate Initial Device Configurations}
+\item \textbf{Confirm Connectivity between Devices and Control Node}
+\item \textbf{Begin Configuring the Network}
+\end{enumerate}
 
 
-	\subsection{Configuring our Control Node}
+\subsection{Configuring our Control Node}
 	
 	\subsubsection{Installing our Base Operating System}
 	
@@ -241,7 +247,7 @@ The implementation phase is also dependent on the configuration of the Control N
 
 \section{Resources}
 
-Almost all the software that is needed is open-source. Not all the network operating systems are free.
+Almost all the software that is needed is open-source or freely available. Some of the network operating systems require a license to operate or are limited in their capabilities being that they are evaluation versions of the software.
 	
 	\subsection{Host System}
 	
@@ -255,7 +261,8 @@ Almost all the software that is needed is open-source. Not all the network opera
 	
 	\subsection{Network Components}
 		\subsubsection{Simulation Software}
-GNS3 stands for Graphical Network Simulator-3. It is popular tool used for the educational purposes of 
+\textit{GNS3} stands for Graphical Network Simulator-3. It is a popular tool used for testing \\ networks, labbing for certifications and in our  case to develop a proof of concept.
+ 
 		\subsubsection{Network Operating Systems}
 		\subsubsection{IP Services}
 		\subsubsection{Docker}
