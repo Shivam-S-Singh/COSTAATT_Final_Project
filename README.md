@@ -1,4 +1,7 @@
-# <ins>COSTAATT Final Project Overview</ins>
+![Title Image](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/2cc85cc26c99372265f3745dce79d3cc1dee5f2c/TitlePic.jpg)
+
+# <ins>Harnessing Software Engineering Principles in
+ Network Operations</ins>
 
 ## The Application of DevOps in Campus Area Networks
 
