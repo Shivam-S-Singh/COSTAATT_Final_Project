@@ -2,7 +2,7 @@
 
 ## The Application of DevOps in Campus Area Networks
 
-<img src="https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/81fe4262abd39ed36808aebe45aa2cd61eefc706/TitlePic4.jpg" alt="Title Pic">
+<img src="https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/a96bde5ab116c2edc29d1d3552249c86498801ed/TitlePic5.jpg" alt="Title Pic">
 
 This is a practical exercise to address common challenges faced in computer networking that can be solved by utilizing software engineering concepts and tools originally intended to streamline the production and management of code.
 
