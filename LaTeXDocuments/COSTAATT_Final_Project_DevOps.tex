@@ -6,6 +6,7 @@
 \usepackage[none]{hyphenat}
 \usepackage{graphicx}
 \usepackage[luatex,pdfpagelabels,bookmarks,hyperindex,hyperfigures]{hyperref}
+\usepackage{amssymb}
 
 
 \begin{document}
@@ -52,6 +53,8 @@ Complementary content available at \\
 \textit{This document serves as a proposal to adopt a DevOps approach to managing the network infrastructure for the College of Science, Technology and Applied Arts of Trinidad and Tobago.}
 \end{center}
 
+
+[Note: Complete Executive Summary once enough content is generated.]
 
 Many of the software used is open source or freely available. NetDevOps
 
@@ -153,6 +156,40 @@ Network changes can lead to potential loss of services so the process of impleme
 
 
 	\subsection{Solutions}
+	
+	\subsubsection{Documentation: Version Control System (VCS)}
+Version control systems are often utilized by Software Engineers in order to track changes in their code and collaborate with fellow engineers on projects.
+It provides accountability because you can see who made the changes and when it was executed.
+This system also allows you to roll-back to previous software builds in the event that a change breaks something.
+
+\smallskip
+
+A version control system along with an Infrastructure as Code implementation can be utilized for our configuration change process.
+When changes are executed it becomes self documenting and is stored in a centralized location. You can say that documentation now becomes baked into the process and would no longer be an afterthought. We will be utilizing Git as our VCS of choice and use GitHub to keep our code centralized.
+
+	\subsubsection{Production as the Single Source of Truth: IPAM System}
+We can utilize a separate system in order to log the desired state of our network. It will allow for efficient planning in the development of our network as we will be able to define VLANs, Subnets, Interface Assignments and associate these elements with one another. It also has features that would alert you if you try to add overlapping subnets. 
+
+\smallskip
+
+NetBox has become an industry standard IPAM and DCIM system over recent years and has been instrumental in helping organizations build, maintain and scale their networks based on their changing requirements.
+
+
+	\subsubsection{Configuration Management: Infrastructure as Code (IaC)}
+Infrastructure as Code is a strategy that involves using code to manage and configure resources such as servers or network devices instead of using manual options such as the CLI. 
+
+\smallskip
+
+Using IaC eliminates the issue of syntactical errors associated with CLI-based input. There is improved consistency when executing changes across multiple devices. We can scale our network by simply modifying our code to accommodate new changes. Deployments are significantly faster because the provisioning process can be automated. The code can be used across multi-vendor platforms through the use of APIs.
+
+\smallskip
+
+Ansible is an agentless automation framework written in Python that was originally \\ developed to configure servers but has made its way into network operations. We will use this platform to carry out our configuration changes on our devices instead of directly interacting with the device's CLI. When we say Ansible is agentless, it does not require the installation of agents on end devices in order to establish communication between the Ansible host machine and the device. Other available configuration tools may have this requirement. Ansible uses playbooks which define a list of task that 
+
+
+\subsubsection{Testing on Production \& Testing Frameworks: Automated Testing}
+
+
 
 
 \newpage
@@ -204,7 +241,7 @@ You may have noticed that the SDLC and PPDIOO Lifecycle share common stages with
 
 \smallskip
 
-Taking this philosophy into consideration, we can focus on the configurations of basic connectivity first, such as the VLANs, IP Interface Assignments and Routing. Then after we can shift out attention to configurations associated with redundancy and security, e.g., FHRP, STP and ACLs. The physical network will have to be completed before these configurations can be carried out.
+Taking this philosophy into consideration, we can focus on the configurations of basic connectivity first, such as the VLANs, IP Interface Assignments and Routing. Then after we can shift our attention to configurations associated with redundancy and security, e.g., FHRP, STP and ACLs. The physical network will have to be completed before these configurations can be carried out.
 
 \subsubsection{Design Phase}
 
@@ -254,23 +291,62 @@ Almost all the software that is needed is open-source or freely available. Some 
 	\subsection{Design}
 	
 		\subsubsection{Topology , Physical Rack and Change Process Flow}
-\textit{Draw.IO} is a modelling tool that is used for the creation of diagrams such as flow charts and network designs. It is a great alternative to Visio and no license cost is attached.
+\textit{Draw.IO} is used for the creation of diagrams such as flow charts and network designs. It is a great alternative to Visio and no license cost is attached.
 
 		\subsubsection{Network Source of Truth}
-\textit{NetBox} is used to document networks with relevant information such as IPAM and DCIM. NetBox is intended to be used as a single source of truth within network operations.
+\textit{NetBox} is utilized to document networks with relevant information such as IPAM and DCIM. NetBox is intended to be used as a \\ single source of truth within network operations.
 	
 	\subsection{Network Components}
 		\subsubsection{Simulation Software}
-\textit{GNS3} stands for Graphical Network Simulator-3. It is a popular tool used for testing \\ networks, labbing for certifications and in our  case to develop a proof of concept.
+\textit{GNS3} stands for Graphical Network Simulator-3. It is a popular tool used for testing \\ networks, studying for certifications and in our  case to develop a proof of concept for our proposed design.
  
 		\subsubsection{Network Operating Systems}
-		\subsubsection{IP Services}
-		\subsubsection{Docker}
+Cisco \\
+Cisco \\
+Juniper \\
+Arista \\
+Fortinet
+		
+\newpage
+
+		\subsubsection{Network Services}
+Several IP Services will have to be deployed in order to operate our network. Each of these services will be installed within their own Docker container.
+
+\textbf{DNS:} \textit{BIND 9} is a domain name server which is used to map human readable names to IP addresses.
+
+\smallskip
+
+\textbf{DHCP:} \textit{Kea DHCP} is a server that distributes IPv4 and IPv6 addresses to clients on modern networks. 
+
+\smallskip
+
+\textbf{Syslog:} \textit{syslog-ng} is an implementation of the syslog protocol which is used for log \\ collection from a variety of sources, including network devices.
+
+\smallskip
+
+\textbf{NTP:} \textit{Chrony} is a Network Time Protocol server used to keep the time settings on devices synchronized.
+
+\smallskip
+
+\textbf{RADIUS:} \textit{FreeRADIUS} is a suite of software that allows centralized management for the authentication, authorization and accounting of network devices.
+
+
+		\subsubsection{Virtualization / Containerization}
+\textit{Docker} is a container based technology that is used to package applications within an isolated environment. This environment has all the necessary packages and dependencies installed in order for the application to function.
 		
 	\subsection{Infrastructure as Code}
+	
 		\subsubsection{Automation Platform}
+\textit{Ansible} is an automation framework that was originally developed for configuring servers, however, in recent years it has grown in popularity as a method for provisioning network devices.
+
 		\subsubsection{Version Control System}
+\textit{Git} is a distributed version control system that allows developers to track changes to \\ their code.
+
+\textit{GitHub} is an online platform that allows developers to collaborate on projects and share their code.
+
 		\subsubsection{CI \& CD}
+		
+		
 		\subsubsection{Automated Testing}
 		
 
@@ -281,11 +357,12 @@ Almost all the software that is needed is open-source or freely available. Some 
 \newpage
 
 \section{Measurement}
+[Note: Define measurements later on in project]
 
 \newpage
 
 \section{Budget}
-Note: Use the cost for each representational device on the network.
-This will only cover the devices and not the racks or the cabling associated with its design as this is merely conceptual.
+[Note: Use the cost for each representational device on the network.
+This will only cover the devices and not the racks or the cabling associated with its design as this is merely conceptual.]
 
 \end{document}
