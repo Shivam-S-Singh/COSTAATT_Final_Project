@@ -7,7 +7,9 @@
 \usepackage{graphicx}
 \usepackage[luatex,pdfpagelabels,bookmarks,hyperindex,hyperfigures]{hyperref}
 \usepackage{amssymb}
-
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
 
 \begin{document}
 
@@ -111,7 +113,7 @@ Manual updates are required whenever a change is made on the network, e.g., a \\
 
 \smallskip
 
-There is a lack of accountability when changes are made. For instance, lets say an ACL entry was configured to block Facebook for a specific part of the network, why was this change made and who was the engineer that made the change. This change could have been implemented as a request from a manager who finds that their staff is spending too much time on social media or from the IT team in response to slow speeds due to over utilization of an internet circuit.
+There is a lack of accountability when changes are made. For instance, lets say an ACL entry was configured to block FaceBook for a specific part of the network, why was this change made and who was the engineer that made the change. This change could have been implemented as a request from a manager who finds that their staff is spending too much time on social media or from the IT team in response to slow speeds due to over utilization of an internet circuit.
 When a change is made, we should have the necessary details when we look back on this change. Who made the change, when was it executed and why was it executed. This context and details is instrumental in effectively managing our network.
 
 \smallskip
@@ -284,9 +286,25 @@ The implementation phase is dependent on the configuration of the Control Node a
 
 \section{Resources}
 
-Almost all the software that is needed is open-source or freely available. Some of the network operating systems require a license to operate or are limited in their capabilities being that they are evaluation versions of the software.
-	
 	\subsection{Host System}
+The following below details my system environment that will be used to simulate the network. An Ubuntu host machine will be used for this project. If you use GNS3 on Windows you will have to use a GNS3VM that is running on VMware. The reason for this is because Windows does not have native support to efficiently emulate the network OS and the GNS3VM (which is really an Ubuntu VM) handles this. The problem with this is that there is nested virtualization taking place and you won’t utilize the full capabilities of your systems hardware. If you run GNS3 directly on Ubuntu then you will be able to make full utilization of your systems hardware.
+
+\smallskip
+
+\textbf{OS:} \texttt{Kubuntu 24.04.1 LTS x86\_64} \\
+\textbf{Motherboard:} \texttt{B450 AORUS PRO WIFI} \\ 
+\textbf{Kernel:} \texttt{6.8.0-55-generic} \\
+\textbf{Shell:} \texttt{bash 5.2.21} \\
+\textbf{Desktop Environment:} \texttt{Plasma 5.27.11} \\
+\textbf{Window Manager:} \texttt{KWin} \\
+\textbf{Terminal:} \texttt{konsole} \\
+\textbf{CPU:} \texttt{AMD Ryzen 5 3600 (12) @ 3.600GHz} \\  
+\textbf{GPU:} \texttt{NVIDIA GeForce GTX 1060 6GB}  \\
+\textbf{Memory:} \texttt{32GB} \\
+\textbf{Storage:} \texttt{1000GB}
+
+  
+	
 	
 	\subsection{Design}
 	
@@ -294,25 +312,48 @@ Almost all the software that is needed is open-source or freely available. Some 
 \textit{Draw.IO} is used for the creation of diagrams such as flow charts and network designs. It is a great alternative to Visio and no license cost is attached.
 
 		\subsubsection{Network Source of Truth}
-\textit{NetBox} is utilized to document networks with relevant information such as IPAM and DCIM. NetBox is intended to be used as a \\ single source of truth within network operations.
+\textit{NetBox} is utilized to document networks with relevant information such as IPAM \\ and DCIM. NetBox is intended to be used as a single source of truth within network operations.
+	
+\newpage
 	
 	\subsection{Network Components}
+	
 		\subsubsection{Simulation Software}
-\textit{GNS3} stands for Graphical Network Simulator-3. It is a popular tool used for testing \\ networks, studying for certifications and in our  case to develop a proof of concept for our proposed design.
+\textit{GNS3} stands for Graphical Network Simulator-3. It is a popular tool used for testing \\ networks, studying for certifications and in our case to develop a proof of concept for our proposed design.
+ 
  
 		\subsubsection{Network Operating Systems}
 The following associated files are used to simulate the Network Operating Systems of
-our selected hardware.
+our selected hardware within GNS3.
+
+\textbf{Firewall:} Fortinet FortiGate 100E \\
+\textbf{Image Version:} \texttt{FGT\_VM64\_KVM-v7.0.14.M-build0601}
+
+\smallskip
+
+\textbf{WAN Switch:} Cisco Catalyst 2960C \\
+\textbf{Image Version:} 
+\texttt{vios\_l2-adventerprisek9-m.ssa.high\_iron\_20200929.qcow2}
+
+\smallskip
+
+\textbf{Router:} Cisco ASR 1001-X \\
+\textbf{Image Version:} 
+\texttt{csr1000v-universalk9.17.03.08a-serial.qcow2}
+
+\smallskip
+
+\textbf{Aggregator Switches:} Juniper EX2300 \\
+\textbf{Image Version:} 
+\texttt{vJunos-switch-24.4R1.9.qcow2}
+
+\smallskip
+
+\textbf{Access Switches:} Arista 7050T-52 \\
+\textbf{Image Version:} 
+\texttt{vEOS-lab-4.33.1.1F.qcow2}
 
 
-Firewalls \\
-\texttt{FGT\_VM64\_KVM-v7.0.14.M-build0601} \\
-WAN Switches \\
-Routers \\
-Aggregator Switches \\
-Access Switches
-
-		
 
 		\subsubsection{Network Services}
 Several IP Services will have to be deployed in order to operate our network. Each of these services will be installed within their own Docker container.
@@ -338,6 +379,7 @@ Several IP Services will have to be deployed in order to operate our network. Ea
 
 		\subsubsection{Virtualization / Containerization}
 \textit{Docker} is a container based technology that is used to package applications within an isolated environment. This environment has all the necessary packages and dependencies installed in order for the application to function.
+		
 		
 	\subsection{Infrastructure as Code}
 	
