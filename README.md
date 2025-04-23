@@ -26,16 +26,16 @@ The reason I chose to build a network from scratch is because having a design ph
 With that being said, we need to first design a new network. If you would like details behind my design choices as well as the process you can reference the Project Proposal Document.
 
 
-Tradionally in the earlier design process of networks, the most commonly used tools were Visio, Excel and Word. Where Visio would be used for diagrams of the proposed network. Word and Excel would be used to log logical information such as VLANs and IP Addressing. This was what was available at the time and there are licensing cost associated with these software.
+Traditionally in the earlier design process of networks, the most commonly used tools were Visio, Excel and Word. Where Visio would be used for diagrams of the proposed network. Word and Excel would be used to log logical information such as VLANs and IP Addressing. This was what was available at the time and there are licensing cost associated with these software.
 
 
 The tools that were utilized in the design stage of the network were Draw.IO and NetBox. In the spirit of open source development we will be utilizing as much freely available software from the initial start of the project all the way to final product.
 
-Below is a high level diagram of what our network will look like. This is a 3-Tier network
+Below is a high level diagram of what our network will look like. This is a 3-Tier network designed with high availability and fault tolerance as driving factors.
 
 ![COSTAATT High Level Diagram](https://github.com/Shivam-S-Singh/COSTAATT_Final_Project/blob/f9ebebf90d190d41b07ddb6494e0a1dbd5036574/NetworkCostaatt_HLD.jpg)
 
-While we are not working with physical devices, below serves as a reference to what the devices would look like on a switch rack. The devices chosen were based on its relation to the network OS software that will run in GNS3.
+While we are not working with physical devices, below serves as a reference to what the simulated devices would look like on a switch rack. The devices chosen were based on its relation to the network OS software that will run in GNS3.
 
 
 
