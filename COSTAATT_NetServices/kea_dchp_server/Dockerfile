@@ -1,0 +1,11 @@
+FROM debian:latest
+
+RUN apt update && apt install curl gnupg apt-transport-https -y
+RUN curl -1sLf 'https://dl.cloudsmith.io/public/isc/kea-3-0/setup.deb.sh' | bash
+RUN apt update && apt install isc-kea-dhcp4-server -y
+
+EXPOSE 67/udp
+
+USER root
+
+CMD ["/usr/sbin/kea-dhcp4","-c","/etc/kea/kea-dhcp4.conf"]

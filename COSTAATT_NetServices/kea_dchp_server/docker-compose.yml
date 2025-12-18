@@ -1,0 +1,19 @@
+volumes:
+  kea-data: {}
+
+services:
+  kea:
+    image: kea_dhcp:0.1
+    container_name: kea
+    ports:
+      - '67:67/udp'
+    restart: always
+    volumes:
+      - ./kea/kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf
+      - kea-data:/var/lib/kea
+    networks:
+      network_services:
+        ipv4_address: 172.16.10.20
+networks:
+  network_services:
+    external: true

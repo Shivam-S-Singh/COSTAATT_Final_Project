@@ -1,0 +1,16 @@
+services:
+  chrony:
+    build: .
+    container_name: chrony-server
+    ports:
+      - "123:123/udp"
+    restart: always
+    volumes:
+      - ./chrony.conf:/etc/chrony/chrony.conf
+    networks:
+      network_services:
+        ipv4_address: 172.16.10.15
+
+networks:
+  network_services:
+    external: true
