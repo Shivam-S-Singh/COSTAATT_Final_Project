@@ -11,4 +11,10 @@ services:
             - /var/cache/bind
             - /var/lib/bind
             - /var/log
-        image: internetsystemsconsortium/bind9:9.18
+        image: internetsystemsconsortium/bind9:9.18    
+        networks:
+          network_services:
+            ipv4_address: 172.16.10.30
+networks:
+  network_services:
+    external: true
