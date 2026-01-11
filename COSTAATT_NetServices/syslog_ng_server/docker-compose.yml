@@ -1,0 +1,17 @@
+services:
+    syslog-ng:
+        container_name: syslog-ng-server
+        image: balabit/syslog-ng:latest
+        restart: always
+        ports:
+            - 514:514/udp
+            - 601:601/tcp
+        volumes:
+            - /data/syslog-ng/logs/:/var/log
+        networks:
+            network_services:
+                ipv4_address: 172.16.10.35
+networks:
+    network_services:
+        external: true
+        
