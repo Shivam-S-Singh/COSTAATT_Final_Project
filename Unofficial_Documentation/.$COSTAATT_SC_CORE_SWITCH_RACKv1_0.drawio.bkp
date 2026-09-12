@@ -64,8 +64,8 @@
         <mxCell id="s9mxd9gDeuxKCFB3ZhDs-13" value="&lt;font style=&quot;font-size: 10px;&quot; face=&quot;Calibri&quot;&gt;&lt;b&gt;Distribution Switches&lt;/b&gt; - &lt;i&gt;Juniper EX2300&lt;/i&gt;&amp;nbsp;which aggregate the connections from the access switches.&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;strokeColor=#E07A5F;align=left;labelBackgroundColor=none;fillColor=#F2CC8F;fontColor=#393C56;" parent="1" vertex="1">
           <mxGeometry x="212" y="260.86" width="222" height="44.71" as="geometry" />
         </mxCell>
-        <mxCell id="s9mxd9gDeuxKCFB3ZhDs-15" value="&lt;font size=&quot;1&quot; face=&quot;Calibri&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;COSTAATT SOUTH CAMPUS CORE SWITCH RACK&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;1&quot; face=&quot;Calibri&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 13px;&quot;&gt;ver 1.0&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#393C56;" parent="1" vertex="1">
-          <mxGeometry x="295" y="58" width="536" height="30" as="geometry" />
+        <mxCell id="s9mxd9gDeuxKCFB3ZhDs-15" value="&lt;font size=&quot;1&quot; face=&quot;Calibri&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 20px;&quot;&gt;COSTAATT SOUTH CAMPUS CORE SWITCH RACK&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 13px;&quot;&gt;&lt;font face=&quot;Calibri&quot; style=&quot;font-size: 13px;&quot;&gt;&lt;b style=&quot;&quot;&gt;&lt;i&gt;ver 1.0&lt;/i&gt; | &lt;/b&gt;&lt;b style=&quot;&quot;&gt;&lt;span style=&quot;&quot;&gt;A&lt;/span&gt;uthor: Shivam Singh&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=1;fontColor=#393C56;" parent="1" vertex="1">
+          <mxGeometry x="295" y="47" width="536" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
